@@ -18,7 +18,7 @@ def main():
     red.start(rs)
     green.start(gs)
     blue.start(bs)
-    for i in range(0, 1000):
+    for i in range(0, 100):
         x = i 
         rs = 50 * (1.0 + math.sin(x + 0.0))
         gs = 50 * (1.0 + math.sin(.5*x + 1))
@@ -27,7 +27,7 @@ def main():
         red.ChangeDutyCycle(rs)
         green.ChangeDutyCycle(gs)
         blue.ChangeDutyCycle(bs)
-        time.sleep(.05)       
+        time.sleep(.5)       
     red.stop()
     green.stop()
     blue.stop()
